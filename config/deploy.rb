@@ -7,7 +7,7 @@ set :bundle_without, %w{test}.join(':')
 
 set :rbenv_version, '3.3.0'
 
-set :rbenv_path, '~/.rbenv'
+set :set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
