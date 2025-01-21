@@ -6,7 +6,7 @@ set :repo_url, "https://github.com/tommyoguro/Blog_Deploy2.git"
 set :bundle_without, %w{test}.join(':')
 
 set :rbenv_version, '3.3.0'
-set :rbenv_path, '/home/AWS_EC2_deploy4/.rbenv' 
+set :rbenv_path, '~/.rbenv'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_version)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 
 
