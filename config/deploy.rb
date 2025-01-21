@@ -7,6 +7,8 @@ set :bundle_without, %w{test}.join(':')
 
 set :rbenv_version, '3.3.0'
 
+set :rbenv_path, '/home/tommyoguro/.rbenv/'
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
