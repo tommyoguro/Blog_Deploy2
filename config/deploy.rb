@@ -6,8 +6,8 @@ set :repo_url, "https://github.com/tommyoguro/Blog_Deploy2.git"
 set :bundle_without, %w{test}.join(':')
 
 set :rbenv_version, '3.3.0'
-set :rbenv_path, '/home/tommyoguro/.rbenv'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+set :rbenv_path, '/home/tommyoguro/.rbenv' /home/tommyoguro/.rbenv/shims/ruby
+set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)} 
 
 
 # Default branch is :master
