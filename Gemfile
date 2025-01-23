@@ -46,7 +46,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'  
   gem 'capistrano3-unicorn'
-end
+  end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
