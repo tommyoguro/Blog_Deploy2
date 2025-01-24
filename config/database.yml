@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: blog_app_production
-  username: blog_app
-  password: <%= ENV['BLOG_APP_DATABASE_PASSWORD'] %>
+  database: cdp_web_web_aws_deploy_task_production
+  username: cdp_web_web_aws_deploy_task
+  password: <%= ENV['CDP_WEB_WEB_AWS_DEPLOY_TASK_DATABASE_PASSWORD'] %>
